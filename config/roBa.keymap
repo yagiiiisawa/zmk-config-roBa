@@ -55,6 +55,13 @@
             bindings = <&kp EQUAL>;
             key-positions = <24 25>;
         };
+
+        IME {
+            bindings = <&kp LG(SPACE)>;
+            key-positions = <38 13>;
+            layers = <0>;
+            slow-release;
+        };
     };
 
     macros {
