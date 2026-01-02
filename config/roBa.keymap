@@ -47,7 +47,7 @@
         };
 
         double_quotation {
-            bindings = <&kp DOUBLE_QUOTES>;
+            bindings = <&kp SINGLE_QUOTE>;
             key-positions = <20 21>;
         };
 
@@ -98,10 +98,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R                 &kp T                                                 &kp Y        &kp U  &lt 5 I    &kp O    &kp P
-&kp A             &kp S         &kp D         &kp F                 &kp G        &kp LS(LG(S))             &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp SQT
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                 &kp B        &kp COLON                 &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL         &kp LEFT_ALT  &kp LEFT_GUI  &lt_to_layer_0 6 F13  &lt 2 SPACE  &lt_to_layer_0 3 F14      &kp BACKSPACE  &lt 1 ENTER                             &kp DELETE
+&kp Q             &kp W         &kp E         &kp R                                 &kp T                                                 &kp Y        &kp U  &lt 5 I    &kp O    &kp P
+&kp A             &kp S         &kp D         &kp F                                 &kp G        &kp LS(LG(NUMBER_4))      &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp SEMICOLON
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                                 &kp B        &trans                    &trans         &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp LCTRL         &kp LEFT_ALT  &kp LEFT_GUI  &lt_to_layer_0 5 LG(INTERNATIONAL_3)  &lt 2 SPACE  &lt_to_layer_0 3 F14      &kp BACKSPACE  &lt 1 ENTER                             &kp DELETE
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
