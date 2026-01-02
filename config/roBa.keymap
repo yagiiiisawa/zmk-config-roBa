@@ -61,6 +61,11 @@
             layers = <0>;
             slow-release;
         };
+
+        Cmd+Tab {
+            bindings = <&kp LG(TAB)>;
+            key-positions = <11 12 36>;
+        };
     };
 
     macros {
