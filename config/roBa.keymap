@@ -108,11 +108,13 @@
 
         FUNCTION {
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5                      &kp F6          &kp F7          &kp F8        &kp F9           &kp F10
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp F11
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans          &trans          &trans        &trans           &kp F12
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                         &kp F13
+&kp F1        &kp F2        &kp F3                  &kp F4                  &kp F5                                          &kp F6          &kp F7          &kp F8        &kp F9           &kp F10
+&trans        &trans        &trans                  &trans                  &trans             &trans               &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp F11
+&kp C_BRI_DN  &kp C_BRI_UP  &kp C_BACKLIGHT_TOGGLE  &kp C_BACKLIGHT_TOGGLE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP      &trans  &trans          &trans          &trans        &trans           &kp F12
+&trans        &trans        &trans                  &trans                  &trans             &trans               &trans  &trans                                                         &kp F13
             >;
+
+            sensor-bindings = <&encoder_msc_down_up>;
         };
 
         NUM {
@@ -122,6 +124,8 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp EQUAL     &kp NUMBER_1  &kp N2  &kp N3  &kp MINUS
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp COMMA                                   &kp PLUS
             >;
+
+            sensor-bindings = <&encoder_msc_down_up>;
         };
 
         ARROW {
@@ -132,7 +136,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                               &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
+            sensor-bindings = <&encoder_msc_down_up>;
         };
 
         MOUSE {
@@ -142,8 +146,6 @@
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans     &trans     &trans     &trans
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans                                   &trans
             >;
-
-            sensor-bindings = <&inc_dec_kp 0 0>;
         };
 
         SCROLL {
