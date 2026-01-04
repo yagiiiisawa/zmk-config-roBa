@@ -55,11 +55,16 @@
             key-positions = <24 25>;
         };
 
-        IME {
-            bindings = <&kp LG(SPACE)>;
+        hankaku {
+            bindings = <&kp LANGUAGE_1>;
             key-positions = <38 13>;
             layers = <0>;
             slow-release;
+        };
+
+        zenkaku {
+            bindings = <&kp LANGUAGE_1>;
+            key-positions = <40 18>;
         };
     };
 
@@ -149,6 +154,15 @@
         };
 
         SCROLL {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+            >;
+        };
+
+        layer_6 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
