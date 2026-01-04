@@ -56,7 +56,7 @@
         };
 
         hankaku {
-            bindings = <&kp LANGUAGE_1>;
+            bindings = <&kp LANGUAGE_2>;
             key-positions = <38 13>;
             slow-release;
         };
