@@ -55,15 +55,10 @@
             key-positions = <24 25>;
         };
 
-        hankaku {
-            bindings = <&kp LANGUAGE_2>;
+        ime {
+            bindings = <&kp LG(SPACE)>;
             key-positions = <38 13>;
             slow-release;
-        };
-
-        zenkaku {
-            bindings = <&kp LANGUAGE_1>;
-            key-positions = <40 18>;
         };
     };
 
