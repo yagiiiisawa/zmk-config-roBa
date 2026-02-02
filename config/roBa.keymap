@@ -32,17 +32,12 @@
 
         esc {
             bindings = <&kp ESC>;
-            key-positions = <10 11>;
+            key-positions = <0 1>;
         };
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <11 12>;
-        };
-
-        shift_tab {
-            bindings = <&kp LS(TAB)>;
-            key-positions = <12 13>;
+            key-positions = <11 10>;
         };
 
         double_quotation {
@@ -50,15 +45,20 @@
             key-positions = <20 21>;
         };
 
-        eq {
-            bindings = <&kp EQUAL>;
-            key-positions = <24 25>;
-        };
-
-        ime {
-            bindings = <&kp LG(SPACE)>;
+        ALPHABET {
+            bindings = <&kp LANG1>;
             key-positions = <38 13>;
             slow-release;
+        };
+
+        HIRAGANA {
+            bindings = <&kp LANG_HIRAGANA>;
+            key-positions = <18 41>;
+        };
+
+        minus {
+            bindings = <&kp MINUS>;
+            key-positions = <8 9>;
         };
     };
 
@@ -96,10 +96,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E     &kp R  &kp T                                                      &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A             &kp S         &kp D     &kp F  &kp G        &kp LS(LG(NUMBER_4))           &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp SINGLE_QUOTE
-&mt LEFT_SHIFT Z  &kp X         &kp C     &kp V  &kp B        &kp COLON                      &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL         &kp LEFT_ALT  &kp LGUI  &mo 5  &lt 2 SPACE  &lt_to_layer_0 3 LEFT_GUI      &kp BACKSPACE  &lt 1 ENTER                             &kp DELETE
+&kp Q             &kp W         &kp E     &kp R             &kp T                                                      &kp Y        &kp U  &kp I      &kp O    &kp P
+&kp A             &kp S         &kp D     &kp F             &kp G        &trans                         &trans         &kp H        &kp J  &kp K      &kp L    &kp SINGLE_QUOTE
+&mt LEFT_SHIFT Z  &kp X         &kp C     &kp V             &kp B        &kp COLON                      &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp LCTRL         &kp LEFT_ALT  &kp LGUI  &lt 5 LANGUAGE_1  &lt 2 SPACE  &lt_to_layer_0 3 LEFT_GUI      &kp BACKSPACE  &lt 1 ENTER                             &kp DELETE
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
