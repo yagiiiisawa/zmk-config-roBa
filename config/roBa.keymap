@@ -96,19 +96,19 @@
 
         FUNCTION {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+&trans  &trans  &trans  &trans  &trans                      &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &kp F11
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &kp F12
             >;
         };
 
         NUM {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+&trans  &kp N7  &kp N8  &kp N9  &kp PLUS                                          &kp CARET        &kp AMPERSAND  &kp TILDE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&trans  &kp N4  &kp N5  &kp N6  &kp ASTERISK  &kp LC(LA(N0))      &kp UNDERSCORE  &kp EXCLAMATION  &kp AT_SIGN    &kp HASH   &kp DOLLAR            &kp PERCENT
+&kp N0  &kp N1  &kp N2  &kp N3  &kp DOT       &kp EQUAL           &trans          &kp LBKT         &kp RBKT       &kp A      &kp A                 &kp BSLH
+&trans  &trans  &trans  &trans  &trans        &trans              &trans          &trans                                                           &kp FSLH
             >;
         };
 
