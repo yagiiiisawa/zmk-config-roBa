@@ -85,10 +85,10 @@
 
         default {
             bindings = <
-&kp Q             &kp W         &kp E     &kp R                   &kp T                                                                     &kp Y      &kp U  &kp I      &kp O    &kp P
-&kp A             &kp S         &kp D     &kp F                   &kp G                   &kp LS(LG(S))                      &kp MINUS      &kp H      &kp J  &kp K      &kp L    &kp SQT
-&mt LEFT_SHIFT Z  &kp X         &kp C     &kp V                   &kp B                   &kp COLON                          &kp SEMI       &kp N      &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL         &kp LEFT_ALT  &kp LGUI  &to_layer_0 INT_HENKAN  &lt_to_layer_0 2 SPACE  &lt_to_layer_0 3 INT_MUHENKAN      &kp BACKSPACE  &kp ENTER                             &kp DELETE
+&kp Q             &kp W         &kp E     &kp R                        &kp T                                                                     &kp Y      &kp U  &kp I      &kp O    &kp P
+&kp A             &kp S         &kp D     &kp F                        &kp G                   &kp LS(LG(S))                      &kp MINUS      &kp H      &kp J  &kp K      &kp L    &kp SQT
+&mt LEFT_SHIFT Z  &kp X         &kp C     &kp V                        &kp B                   &kp COLON                          &kp SEMI       &kp N      &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp LCTRL         &kp LEFT_ALT  &kp LGUI  &lt_to_layer_0 5 INT_HENKAN  &lt_to_layer_0 2 SPACE  &lt_to_layer_0 3 INT_MUHENKAN      &kp BACKSPACE  &kp ENTER                             &kp DELETE
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -114,10 +114,10 @@
 
         ARROW {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+&kp ESC    &kp LG(LS(TAB))   &kp UP_ARROW  &kp LG(TAB)        &trans                       &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
+&kp HOME   &kp LEFT          &kp DOWN      &kp RIGHT          &kp END  &trans      &trans  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
+&kp LSHFT  &kp LS(LG(LEFT))  &trans        &kp LS(LG(RIGHT))  &trans   &trans      &trans  &trans  &trans  &trans  &trans  &kp F11
+&trans     &trans            &trans        &trans             &trans   &trans      &trans  &trans                          &kp F12
             >;
         };
 
